@@ -84,64 +84,65 @@ table.button {
     }
   }
 
-  &.radius table td {
-    border-radius: $button-radius;
-    border: none;
-  }
+  // &.radius table td {
+  //   border-radius: $button-radius;
+  //   border: none;
+  // }
 
-  &.rounded table td {
-    border-radius: $button-rounded;
-    border: none;
-  }
+  // &.rounded table td {
+  //   border-radius: $button-rounded;
+  //   border: none;
+  // }
 }
 
 table.button:hover table tr td a,
 table.button:active table tr td a,
 table.button table tr td a:visited,
-table.button.tiny:hover table tr td a,
-table.button.tiny:active table tr td a,
-table.button.tiny table tr td a:visited,
-table.button.small:hover table tr td a,
-table.button.small:active table tr td a,
-table.button.small table tr td a:visited,
-table.button.large:hover table tr td a,
-table.button.large:active table tr td a,
-table.button.large table tr td a:visited {
+// table.button.tiny:hover table tr td a,
+// table.button.tiny:active table tr td a,
+// table.button.tiny table tr td a:visited,
+// table.button.small:hover table tr td a,
+// table.button.small:active table tr td a,
+// table.button.small table tr td a:visited,
+// table.button.large:hover table tr td a,
+// table.button.large:active table tr td a,
+// table.button.large table tr td a:visited
+{
   color: $button-color;
 }
 
-table.button.tiny {
-  table {
-    td,
-    a {
-      padding: map-get($button-padding, tiny);
-    }
+// table.button.tiny {
+//   table {
+//     td,
+//     a {
+//       padding: map-get($button-padding, tiny);
+//     }
 
-    a {
-      font-size: map-get($button-font-size, tiny);
-      font-weight: normal;
-    }
-  }
-}
+//     a {
+//       font-size: map-get($button-font-size, tiny);
+//       font-weight: normal;
+//     }
+//   }
+// }
 
-table.button.small {
-  table {
-    td,
-    a {
-      padding: map-get($button-padding, small);
-      font-size: map-get($button-font-size, small);
-    }
-  }
-}
+// table.button.small {
+//   table {
+//     td,
+//     a {
+//       padding: map-get($button-padding, small);
+//       font-size: map-get($button-font-size, small);
+//     }
+//   }
+// }
 
-table.button.large {
-  table {
-    a {
-      padding: map-get($button-padding, large);
-      font-size: map-get($button-font-size, large);
-    }
-  }
-}
+// table.button.large {
+//   table {
+//     a {
+//       padding: map-get($button-padding, large);
+//       font-size: map-get($button-font-size, large);
+//     }
+//   }
+// }
 
 table.button.expand,
 table.button.expanded {
@@ -184,129 +185,129 @@ table.button:active {
   }
 }
 
-table.button.secondary {
-  table {
-    td {
-      background: $secondary-color;
-      color: $button-color;
-      border: 0px solid $secondary-color;
-    }
+// table.button.secondary {
+//   table {
+//     td {
+//       background: $secondary-color;
+//       color: $button-color;
+//       border: 0px solid $secondary-color;
+//     }
 
-    a {
-      color: $button-color;
-      border: 0 solid $secondary-color;
-    }
-  }
-}
+//     a {
+//       color: $button-color;
+//       border: 0 solid $secondary-color;
+//     }
+//   }
+// }
 
-table.button.secondary:hover {
-  table {
-    td {
-      background: lighten($secondary-color, 10%);
-      color: $button-color;
-    }
+// table.button.secondary:hover {
+//   table {
+//     td {
+//       background: lighten($secondary-color, 10%);
+//       color: $button-color;
+//     }
 
-    a {
-      border: 0 solid lighten($secondary-color, 10%);
-    }
-  }
-}
+//     a {
+//       border: 0 solid lighten($secondary-color, 10%);
+//     }
+//   }
+// }
 
-table.button.secondary:hover {
-  table {
-    td a {
-      color: $button-color;
-    }
-  }
-}
+// table.button.secondary:hover {
+//   table {
+//     td a {
+//       color: $button-color;
+//     }
+//   }
+// }
 
-table.button.secondary:active {
-  table {
-    td a {
-      color: $button-color;
-    }
-  }
-}
+// table.button.secondary:active {
+//   table {
+//     td a {
+//       color: $button-color;
+//     }
+//   }
+// }
 
-table.button.secondary {
-  table {
-    td a:visited {
-      color: $button-color;
-    }
-  }
-}
+// table.button.secondary {
+//   table {
+//     td a:visited {
+//       color: $button-color;
+//     }
+//   }
+// }
 
-table.button.success {
-  table {
-    td {
-      background: $success-color;
-      border: 0px solid $success-color;
-    }
+// table.button.success {
+//   table {
+//     td {
+//       background: $success-color;
+//       border: 0px solid $success-color;
+//     }
 
-    a {
-      border: 0 solid $success-color;
-    }
-  }
-}
+//     a {
+//       border: 0 solid $success-color;
+//     }
+//   }
+// }
 
-table.button.success:hover {
-  table {
-    td {
-      background: darken($success-color, 10%);
-    }
+// table.button.success:hover {
+//   table {
+//     td {
+//       background: darken($success-color, 10%);
+//     }
 
-    a {
-      border: 0 solid darken($success-color, 10%);
-    }
-  }
-}
+//     a {
+//       border: 0 solid darken($success-color, 10%);
+//     }
+//   }
+// }
 
-table.button.alert {
-  table {
-    td {
-      background: $alert-color;
-      border: 0px solid $alert-color;
-    }
+// table.button.alert {
+//   table {
+//     td {
+//       background: $alert-color;
+//       border: 0px solid $alert-color;
+//     }
 
-    a {
-      border: 0 solid $alert-color;
-    }
-  }
-}
+//     a {
+//       border: 0 solid $alert-color;
+//     }
+//   }
+// }
 
-table.button.alert:hover {
-  table {
-    td {
-      background: darken($alert-color, 10%);
-    }
+// table.button.alert:hover {
+//   table {
+//     td {
+//       background: darken($alert-color, 10%);
+//     }
 
-    a {
-      border: 0 solid darken($alert-color, 10%);
-    }
-  }
-}
+//     a {
+//       border: 0 solid darken($alert-color, 10%);
+//     }
+//   }
+// }
 
-table.button.warning {
-  table {
-    td {
-      background: $warning-color;
-      border: 0px solid $warning-color;
-    }
+// table.button.warning {
+//   table {
+//     td {
+//       background: $warning-color;
+//       border: 0px solid $warning-color;
+//     }
 
-    a {
-      border: 0px solid $warning-color;
-    }
-  }
-}
+//     a {
+//       border: 0px solid $warning-color;
+//     }
+//   }
+// }
 
-table.button.warning:hover {
-  table {
-    td {
-      background: darken($warning-color, 10%);
-    }
+// table.button.warning:hover {
+//   table {
+//     td {
+//       background: darken($warning-color, 10%);
+//     }
 
-    a {
-      border: 0px solid darken($warning-color, 10%);
-    }
-  }
-}
+//     a {
+//       border: 0px solid darken($warning-color, 10%);
+//     }
+//   }
+// }
